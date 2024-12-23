@@ -36,7 +36,7 @@ def detect_edges(image_path):
     gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
     # Perform edge detection
-    edges = cv2.Canny(gray_image, threshold1=150, threshold2=150)
+    edges = cv2.Canny(gray_image, threshold1=100, threshold2=150)
 
     return edges, image  # Return both edges and the original image
 
